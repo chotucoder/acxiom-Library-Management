@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f8f8f8;
+        }
+        .search-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .search-container input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .search-container button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .search-container button:hover {
+            background-color: #0056b3;
+        }
+        .logout-button {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        .logout-button button {
+            padding: 10px 20px;
+            background-color: #dc3545;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .logout-button button:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logout-button">
+            <button>Log Out</button>
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Transactions</th>
+                    <th>Book Name</th>
+                    <th>Author Name</th>
+                    <th>Serial Number</th>
+                    <th>Available</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Issue book?</td>
+                    <td><input type="text"placeholder="Book Name"></td>
+                    <td><input type="text"placeholder="Author Name"></td>
+                    <td><input type="text"placeholder="Serial Number"></td>
+                    <td>  <input type="radio" name="" id="">y <input type="radio">n</td>
+                    <td><input type="radio" name="issue"></td>
+                </tr>
+                <tr>
+                    <td>Return book?</td>
+                    <td><input type="text"placeholder="Book Name"></td>
+                    <td><input type="text"placeholder="Author Name"></td>
+                    <td><input type="text"placeholder="Serial Number"></td>
+                    <td>  <input type="radio" name="" id="">y <input type="radio">n</td>
+                    <td><input type="radio" name="return"></td>
+                </tr>
+                <tr>
+                    <td>Pay Fine?</td>
+                    <td><input type="text"placeholder="Book Name"></td>
+                    <td><input type="text"placeholder="Author Name"></td>
+                    <td><input type="text"placeholder="Serial Number"></td>
+                    <td>  <input type="radio" name="" id="">y <input type="radio">n</td>
+                    <td><input type="radio" name="fine"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
+
+
+
+

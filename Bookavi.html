@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="book.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Library Management System</h1>
+        </div>
+        <div class="navigation">
+            <p >Transactions</p>
+            <!-- <button onclick="location.href='transaction.html'">Transactions</button> -->
+            <button onclick="location.href='index.html'">Home</button>
+        </div>
+        <div class="content">
+            <div class="section">
+                <h2>Is book available?</h2>
+                <input type="text" placeholder="Book Availability">
+            </div>
+            <div class="section">
+                <h2>Issue book?</h2>
+                <input type="text" placeholder="Enter Book Name">
+                <select>
+                    <option>Drop Down</option>
+                    <option value="">Issues successfully</option>
+                    <option value="">Not Issues successfully</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <div class="section">
+                <h2>Return book?</h2>
+                <input type="text" placeholder="Enter Author">
+                <select>
+                    <option>Drop Down</option>
+                    <option value="">Returned</option>
+                    <option value="">Not Returned</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <div class="section">
+                <h2>Pay Fine?</h2>
+                <button onclick="location.href='pay.html'">Pay Fine</button>
+            </div>
+        </div>
+        <div class="footer">
+            <button onclick="location.href='search.html'">Search</button>
+            <button onclick="location.href='logout.html'">Log Out</button>
+        </div>
+    </div>
+</body>
+</html>
+

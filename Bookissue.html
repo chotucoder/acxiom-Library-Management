@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Transactions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f8f8f8;
+        }
+        input[type="text"], input[type="date"], select, textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .button-container button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .button-container button.confirm {
+            background-color: #28a745;
+            color: #fff;
+        }
+        .button-container button.confirm:hover {
+            background-color: #218838;
+        }
+        .button-container button.cancel {
+            background-color: #dc3545;
+            color: #fff;
+        }
+        .button-container button.cancel:hover {
+            background-color: #c82333;
+        }
+        .logout-button {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        .logout-button button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .logout-button button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logout-button">
+            <button>Log Out</button>
+        </div>
+        <h1>Transactions</h1>
+        <h2>Book Issue</h2>
+        <table>
+            <tr>
+                <th>Action</th>
+                <th>Details</th>
+                <th>Input</th>
+            </tr>
+            <tr>
+                <td>Chart</td>
+                <td>Book Issue</td>
+                <td>
+                    <select>
+                        <option value="issue">Issue</option>
+                        <option value="return">Return</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Is book available?</td>
+                <td>Enter Book Name</td>
+                <td><input type="text" placeholder="Book Name"></td>
+            </tr>
+            <tr>
+                <td>Issue book?</td>
+                <td>Enter Author</td>
+                <td><input type="text" placeholder="Author Name"></td>
+            </tr>
+            <tr>
+                <td>Return book?</td>
+                <td>Issue Date</td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td>Pay Fine?</td>
+                <td>Return Date</td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td>Remarks</td>
+                <td>Text area/Text Non Mandatory</td>
+                <td><textarea rows="4" placeholder="Enter remarks"></textarea></td>
+            </tr>
+        </table>
+        <div class="button-container">
+            <button class="cancel">Cancel</button>
+            <button class="confirm">Confirm</button>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+

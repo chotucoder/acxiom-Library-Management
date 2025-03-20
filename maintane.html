@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header h2 {
+            margin: 0;
+            color: #555;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .grid-container .grid-item {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            text-align: center;
+            background-color: #f8f8f8;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h3 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .button-container {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .button-container button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: #fff;
+            flex: 1;
+            text-align: center;
+        }
+        .button-container button:hover {
+            background-color: #0056b3;
+        }
+        .logout-button {
+            text-align: right;
+        }
+        .logout-button button {
+            padding: 10px 20px;
+            background-color: #dc3545;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .logout-button button:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Library Management</h1>
+           <h2>Maintenance</h2>
+        </div>
+
+        
+
+        <div class="section">
+            
+            <div class="button-container">
+                <button>Housekeeping</button>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>Membership</h3>
+            <div class="button-container">
+                <button onclick="location.href='addmain.html'">Add</button>
+                <button onclick="location.href='upmain.html'">Update</button>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>Books/Movies</h3>
+            <div class="button-container">
+                <button onclick="location.href='addbook.html'">Add</button>
+                <button onclick="location.href='updatebook.html'">Update</button>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>User Management</h3>
+            <div class="button-container">
+                <button>Add</button>
+                <button>Update</button>
+            </div>
+        </div>
+
+        <div class="logout-button">
+            <button>Log Out</button>
+        </div>
+    </div>
+</body>
+</html>

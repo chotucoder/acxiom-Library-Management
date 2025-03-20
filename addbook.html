@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            margin-top: 20px;
+        }
+        h3 {
+            margin-bottom: 10px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .grid-container .grid-item {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            text-align: center;
+            background-color: #f8f8f8;
+        }
+        .form-container {
+            margin-bottom: 20px;
+        }
+        .form-container label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        .form-container input[type="text"], .form-container input[type="date"], .form-container input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+        .form-container .radio-group {
+            margin-bottom: 10px;
+        }
+        .form-container .radio-group label {
+            margin-right: 10px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .button-container button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .button-container button.cancel {
+            background-color: #dc3545;
+            color: #fff;
+        }
+        .button-container button.cancel:hover {
+            background-color: #c82333;
+        }
+        .button-container button.confirm {
+            background-color: #28a745;
+            color: #fff;
+        }
+        .button-container button.confirm:hover {
+            background-color: #218838;
+        }
+        .logout-button {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        .logout-button button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .logout-button button:hover {
+            background-color: #0056b3;
+        }
+        .note {
+            font-size: 0.9em;
+            color: #555;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logout-button">
+            <button>Log Out</button>
+        </div>
+        
+        <h2>Add Books</h2>
+      
+
+       
+        <!-- <div class="form-container">
+            <h3>Membership</h3>
+            <label for="addMembership">Add Membership</label>
+            <input type="text" id="addMembership" placeholder="Add Membership"> -->
+            <!-- <label for="addBookMovie">Add Book/Movie</label>
+            <input type="text" id="addBookMovie" placeholder="Add Book/Movie">
+        </div> -->
+
+        <div class="form-container">
+            <h3>Books/Movies</h3>
+            <label for="bookMovieName">Book/Movie Name</label>
+            <input type="text" id="bookMovieName" placeholder="Book/Movie Name">
+            <div class="radio-group">
+                <label><input type="radio" name="bookMovie" value="book"> Book</label>
+                <label><input type="radio" name="bookMovie" value="movie"> Movie</label>
+            </div>
+            <label for="dateOfProcurement">Date of Procurement</label>
+            <input type="date" id="dateOfProcurement">
+            <label for="quantityCopies">Quantity/Copies</label>
+            <input type="number" id="quantityCopies" placeholder="1" value="1">
+        </div>
+
+        <div class="form-container">
+            <h3>User Management</h3>
+            <label for="updateUser">Update User</label>
+            <input type="text" id="updateUser" placeholder="Update User">
+        </div>
+
+       
+
+        <div class="button-container">
+            <button class="cancel">Cancel</button>
+            <button onclick="location.href='conform.html'">Confirm</button>
+        </div>
+
+        
+    </div>
+</body>
+</html>

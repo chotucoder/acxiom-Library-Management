@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .button-container button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: #fff;
+            flex: 1 1 calc(33.333% - 20px);
+            text-align: center;
+        }
+        .button-container button:hover {
+            background-color: #0056b3;
+        }
+        .button-container button.logout {
+            background-color: #dc3545;
+        }
+        .button-container button.logout:hover {
+            background-color: #c82333;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .grid-container .grid-item {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            text-align: center;
+            background-color: #f8f8f8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Library Management</h1>
+        
+        <h2>Report </h2>
+
+        <div class="button-container">
+           
+            <button onclick="location.href='mslistbook.html'">Master List of Books</button>
+            <button>Master List of Movies</button>
+            <button>Master List of Memberships</button>
+            <button>Active Issues</button>
+            <button>Overdue returns</button>
+            <button>Pending Issue Requests</button>
+            <button class="logout">Log Out</button>
+        </div>
+    </div>
+</body>
+</html>
